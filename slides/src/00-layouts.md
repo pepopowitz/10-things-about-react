@@ -1,5 +1,5 @@
 ---
-title: My Reveal Starter Kit - Steven J Hicks
+title: 10 Things You'll Love About React - Steven J Hicks
 theme: css/theme.css
 revealOptions:
   transition: 'none'

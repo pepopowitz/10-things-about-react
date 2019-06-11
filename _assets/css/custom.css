@@ -1,9 +1,14 @@
 body {
-  --brand: navy;
-  --brand-context: green;
-  --brand-light: aliceblue;
-  --brand-white: white;
+  --brand: #0d0d26;
+  --brand-context: #02617e;
+  --brand-medium: #3c6d7c;
+  --brand-medium-alt: #a69b91;
+  --brand-dark-alt: #5b5149;
+  --brand-light: #f7eee6;
+  --brand-white: #fdfcfc;
   --brand-black: #222222;
+
+  color: var(--brand-context);
 }
 
 .speaker-controls-notes .value {
@@ -86,14 +91,11 @@ body {
 .reveal .title h1,
 .reveal .title h2 {
   color: var(--brand-context);
-  text-shadow: 5px 6px 6px var(--brand-white), -5px 6px 6px var(--brand-white),
-    5px -6px 6px var(--brand-white), -5px -6px 6px var(--brand-white);
-  margin-left: -30px;
+  /* margin-left: -30px; */
+  margin-top: -20px;
 }
-
 .reveal .title p {
-  text-shadow: 2px 3px 6px var(--brand-white), -2px 3px 6px var(--brand-white),
-    2px -3px 6px var(--brand-white), -2px -3px 6px var(--brand-white);
+  /* margin-left: -30px; */
 }
 .reveal .title svg {
   fill: var(--brand-context);

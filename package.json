@@ -1,5 +1,5 @@
 {
-  "name": "my-reveal-starter-kit",
+  "name": "10-things-about-react",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Steven Hicks <steven.j.hicks@gmail.com>",
@@ -9,7 +9,7 @@
     "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'npm run start:reveal' 'npm run watch'",
     "build": "npm run stitch && npm run build:reveal",
     "build:reveal": "reveal-md ./slides/stitched.md --static _site --static-dirs=fonts,images,_assets --assets-dir ''",
-    "start:reveal": "reveal-md ./slides/stitched.md -w",
+    "start:reveal": "reveal-md ./slides/stitched.md -w --port 1949",
     "stitch": "node _build/stitch.js",
     "watch": "npm-watch",
     "test": "jest --watch"
