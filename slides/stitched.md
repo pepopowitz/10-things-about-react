@@ -61,6 +61,680 @@ and we're doing that with a platform for collecting and discovering art.
 
 some sort of intro. Why are we talking about this?
 ---
+Layout: module
+# 1. Components
+---
+
+Trail: 1. Components
+
+- mvc/mvvm: controllers & pages
+
+---
+
+Trail: 1. Components
+
+- react & modern frameworks: components
+
+  - most important thing about React: component mindset
+  - what's the biggest advantage(s)?
+
+---
+
+Trail: 1. Components
+
+- Legos
+
+---
+
+Trail: 1. Components, Legos
+
+- draw out component boundaries in a site
+  - https://your-first-react-app.stevenhicks.me/#p70
+
+---
+
+Trail: 1. Components
+
+- Composability
+  - passing props to children
+
+---
+
+Trail: 1. Components
+
+- Isolation first; reuse comes as a natural side-effect.
+
+  - Importance of identifying boundaries: https://your-first-react-app.stevenhicks.me/#p82
+
+---
+
+Trail: 1. Components
+
+- suitcase principle factors in? (code organization)
+
+---
+
+Trail: 1. Components
+
+- components in react are functions
+
+  - https://your-first-react-app.stevenhicks.me/#p85
+
+---
+
+Trail: 1. Components, Are Functions
+
+- they should be pure
+  - what's a pure function?
+
+---
+
+Trail: 1. Components, Are Functions
+
+- they take inputs (props)
+
+---
+
+Trail: 1. Components, Are Functions
+
+- they render to the screen
+
+---
+
+Trail: 1. Components, Are Functions
+
+- createElement
+
+  - https://your-first-react-app.stevenhicks.me/#p98
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+- example with 1 arg
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+- example with 2 args
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+- example with 3 args
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+- complex example
+
+Notes:
+
+- transition:
+  - but no one builds a react app with createElement, because there's a better way...
+  - show me JSX!
+---
+Layout: module
+# 2. JSX
+---
+
+Trail: 2. JSX
+
+- https://your-first-react-app.stevenhicks.me/#p111
+
+---
+
+Trail: 2. JSX
+
+- example with 1 arg
+
+---
+
+Trail: 2. JSX
+
+- nested example
+
+---
+
+Trail: 2. JSX
+
+- you might think you'll hate it
+  - combo of xml & javascript, yikes!
+  - but react.createElement is verbose & gross
+
+---
+
+Trail: 2. JSX
+
+- complex example
+
+---
+
+Trail: 2. JSX
+
+- separation of concerns
+  - https://your-first-react-app.stevenhicks.me/#p121
+  - no, separation of _technologies_
+
+---
+
+Trail: 2. JSX
+
+- JSX lets us write everything in JavaScript
+
+  - maybe you don't like JS?
+  - but it means we get to use modern JS features!
+
+---
+
+Trail: 2. JSX
+
+- components + jsx lead to _declarative_ code
+
+---
+
+Trail: 2. JSX, Declarative
+
+- demo declarative vs imperative (https://your-first-react-app.stevenhicks.me/#p46)
+  - how do you get to my house?
+
+---
+
+Trail: 2. JSX, Declarative
+
+- show example of code
+
+---
+
+Trail: 2. JSX, Declarative
+
+- imperative code is abstracted so we can call it declaratively
+
+---
+
+Trail: 2. JSX, Declarative
+
+- declarative code leads to simplicity & predictability
+---
+Layout: module
+# 3. Styling
+
+Notes: (number 8 on the board)
+---
+
+Trail: 3. Styling
+
+- so many options!
+
+---
+
+Trail: 3. Styling
+
+- Most importantly, styles go with components
+
+---
+
+Trail: 3. Styling
+
+- CSS/SCSS
+
+---
+
+Trail: 3. Styling
+
+- CSS Modules
+
+---
+
+Trail: 3. Styling
+
+- CSS-in-JS
+  - Styled components
+
+---
+
+Trail: 3. Styling
+
+- Separation of Concerns again
+
+---
+
+Trail: 3. Styling
+
+- But you also might not like it! [X]
+---
+Layout: module
+# 4. State Management
+
+Notes:
+#9 on the board
+---
+
+Trail: 4. State Management
+
+- remember the drawing of a component as f(props)?
+
+---
+
+Trail: 4. State Management
+
+- it's a lie. f(props, state).
+
+---
+
+Trail: 4. State Management
+
+- example
+  - counter?
+  - (probably just a drawing showing that a component manages its state)
+
+---
+
+Trail: 4. State Management
+
+- when you update state of a component, React re-renders it
+
+Notes:
+
+Mention there is no two-way binding for state mgmt - it's a one-directional loop.
+
+---
+
+Trail: 4. State Management
+
+- state can be passed into child components (as props)
+
+---
+
+Trail: 4. State Management
+
+- options!
+
+---
+
+Trail: 4. State Management, Options
+
+- useState
+  - for managing component state
+
+---
+
+Trail: 4. State Management, Options, useState
+
+- example
+
+---
+
+Trail: 4. State Management, Options
+
+- useContext
+  - for managing state of a sub-tree
+
+---
+
+Trail: 4. State Management, Options, useContext
+
+- drawing
+
+---
+
+Trail: 4. State Management, Options, useContext
+
+- example (might not make the cut)
+  - provider (at the top)
+  - consumers
+
+---
+
+Trail: 4. State Management, Options
+
+- redux, mobx
+  - for managing state at the top of the tree
+
+---
+
+Trail: 4. State Management, Options, Redux/Mobx
+
+- drawing
+
+---
+
+Trail: 4. State Management, Options, Redux/Mobx
+
+- example (might not make the cut)
+
+---
+
+Trail: 4. State Management, Options, Redux/Mobx
+
+- caution: don't use these unless you know you need them
+
+---
+
+Trail: 4. State Management
+
+- elevate state? (not sure if...)
+---
+Layout: module
+# 5. New Features
+
+Notes:
+#5 on the board
+---
+
+Trail: 5. New Features
+
+- Hooks
+
+---
+
+Trail: 5. New Features, Hooks
+
+- useState
+
+---
+
+Trail: 5. New Features, Hooks
+
+- useContext
+
+---
+
+Trail: 5. New Features, Hooks
+
+- useEffect
+
+---
+
+Trail: 5. New Features, Hooks
+
+- closures
+  - find a good way to explain how each render closes over its hooks
+    - and how each time it renders, it gets a new closure
+
+---
+
+Trail: 5. New Features, Hooks, Closures
+
+- you might not like them! [XX]
+
+---
+
+Trail: 5. New Features
+
+- Suspense (no more "isLoading"!)
+
+---
+
+Trail: 5. New Features
+
+- "Minor" version
+  - Backwards compatible - you can do things the old way, too
+---
+Layout: module
+# 6. Developer Experience
+
+Notes: #3 on the board
+---
+
+Trail: 6. Developer Experience
+
+- tooling
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- hot-reloading
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- webpack (if you don't have to worry about configuring it)
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- babel/modern JS
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- TypeScript/flow
+  - https://your-first-react-app.stevenhicks.me/#p182
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- prettier!
+
+---
+
+Trail: 6. Developer Experience, Tooling
+
+- You might not like Decision Fatigue! [XXX]
+
+---
+
+Trail: 6. Developer Experience
+
+- react dev tools
+
+---
+
+Trail: 6. Developer Experience
+
+- testing
+---
+Layout: module
+# 7. Testing
+
+Notes:
+
+#4 on the board
+
+https://your-first-react-app.stevenhicks.me/#p290
+
+---
+
+Trail: 7. Testing
+
+- Jest
+  - (https://steven-j-hicks-speaking.netlify.com/test-driven-javascript/#p18)
+
+---
+
+Trail: 7. Testing, Jest
+
+- easy setup, no configuration
+
+---
+
+Trail: 7. Testing, Jest
+
+- interactive watch mode
+
+---
+
+Trail: 7. Testing, Jest
+
+- great error messages
+
+---
+
+Trail: 7. Testing, Jest
+
+- syntax
+
+---
+
+Trail: 7. Testing, Jest
+
+- matchers
+
+---
+
+Trail: 7. Testing
+
+- react-testing-library
+
+---
+
+Trail: 7. Testing, react-testing-library
+
+- render
+
+---
+
+Trail: 7. Testing, react-testing-library
+
+- find
+
+---
+
+Trail: 7. Testing, react-testing-library
+
+- assert
+
+---
+
+Trail: 7. Testing, react-testing-library
+
+- interact
+
+---
+
+Trail: 7. Testing
+
+- enzyme
+
+---
+
+Trail: 7. Testing, enzyme
+
+- a ton more ways to test a react app
+---
+Layout: module
+# 8. Performance
+
+Notes:
+#7 on the board
+---
+
+Trail: 8. Performance
+
+- virtual dom/reconciliation
+
+---
+
+Trail: 8. Performance
+
+- tell a component when to update
+
+---
+
+Trail: 8. Performance
+
+- virtualization/windowing
+  - react-window
+
+---
+
+Trail: 8. Performance, Windowing
+
+- example: https://react-window.now.sh/#/examples/list/fixed-size
+
+---
+
+Trail: 8. Performance
+
+- profiler
+---
+Layout: module
+# 9. Community
+
+Notes:
+#10 on the board
+---
+
+Trail: 9. Community
+
+- Core team
+
+---
+
+Trail: 9. Community, Core Team
+
+- transparency about upcoming releases
+
+---
+
+Trail: 9. Community, Core Team
+
+- stability
+  - backwards compatible
+  - prior to hooks/suspense, there were minimal changes for 5 years!
+
+---
+
+Trail: 9. Community
+
+- Docs
+
+---
+
+Trail: 9. Community
+
+- larger dev community
+
+---
+
+Trail: 9. Community, Others
+
+- ryan florence, kent dodds, cory house
+
+---
+
+Trail: 9. Community, Others
+
+- list some courses
+---
+Layout: module
+# 10. create-react-app
+
+Notes:
+#6 on the board
+---
+
+Trail: 10. create-react-app
+
+- Getting started is so easy
+
+---
+
+Trail: 10. create-react-app
+
+- Drawing of cra boxing together
+
+---
+
+Trail: 10. create-react-app
+
+- Eject
+
+---
+
+Trail: 10. create-react-app
+
+- This is your next step!
+---
 
 Footer: false
 
