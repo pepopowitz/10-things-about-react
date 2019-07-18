@@ -1,6 +1,7 @@
 ---
 title: 10 Things You'll Love About React - Steven J Hicks
 theme: css/theme.css
+highlightTheme: 'mono-blue'
 revealOptions:
   transition: 'none'
   controls: false

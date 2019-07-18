@@ -16,8 +16,21 @@ body {
 }
 
 .reveal {
-  background: var(--brand-light);
-  background-color: var(--brand-light);
+  background: var(--brand-white);
+  background-color: var(--brand-white);
+}
+
+.reveal h1 strong,
+.reveal h2 strong {
+  color: var(--brand-dark-alt);
+  font-weight: normal;
+}
+.reveal p strong {
+  color: var(--brand-dark-alt);
+}
+
+.reveal h2 code {
+  font-size: 0.8em;
 }
 
 .reveal .inverse h1,
@@ -135,4 +148,15 @@ body {
 
 .reveal .resources ul {
   font-size: 0.6em;
+}
+
+.directions-to-my-house p {
+  margin-top: -4em;
+}
+
+.reveal pre + p {
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 5rem;
+  margin-bottom: 40px;
 }

@@ -1,6 +1,7 @@
 ---
 title: 10 Things You'll Love About React - Steven J Hicks
 theme: css/theme.css
+highlightTheme: 'mono-blue'
 revealOptions:
   transition: 'none'
   controls: false
@@ -23,7 +24,7 @@ Footer: false
   </defs>
 </svg>
 
-# 10 Things You'll Love About React
+# **10 Things** You'll Love About React
 
 ## Steven Hicks
 
@@ -47,9 +48,37 @@ Notes: STICKERS!
 
 Footer: false
 
+<!-- .slide: data-background="/images/kcdc-sponsors.jpg" data-background-size="contain" data-background-color="black" -->
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/star-student.jpg" -->
+
+Notes:
+
+My kids when they were in kindergarten got to make a huge poster when they were the "star student"
+
+Where they put everything you need to know about them
+
+So I did the same
+
+- Milwaukee
+- JS
+- Super cool letter S
+- Family
+- Outdoors/trail running
+
+---
+
+Footer: false
+
 <!-- .slide: data-background="/images/artsy.svg" data-background-size="750px" data-background-color="black" -->
 
 Notes:
+
+Engineer at Artsy
 
 NYC, MKE
 
@@ -59,83 +88,267 @@ and we're doing that with a platform for collecting and discovering art.
 
 ---
 
-some sort of intro. Why are we talking about this?
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-1.jpg" -->
+
+Notes:
+
+20+ years experience as a JS developer
+
+Many ways I've built JS apps
+
+My user journey
+
 ---
-Layout: module
-# 1. Components
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-2.jpg" -->
+
+Notes:
+
+plain js
+
+- hard to write code
+- hard to write an app
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-3.jpg" -->
+
+Notes:
+
+jquery
+
+- amazing
+- easy to write code
+- hard to write an app
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-4.jpg" -->
+
+Notes:
+
+mv\*
+
+- angular, backbone, knockout
+
+- easy to write code, hard to write an app (ko)
+- easy to write an app, hard to write code (angular)
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-5.jpg" -->
+
+Notes:
+
+And now I'm building apps with React, and have been for the last few years, and I'm really happy.
+
+- easy to write code
+- easy to write app
+
+...
+
+Because I have 10 things to present, I need a clever way to present a list
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/10-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-0.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-1-components.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+## Notes: React is based on components
+
 ---
 
 Trail: 1. Components
 
-- mvc/mvvm: controllers & pages
+> Build **encapsulated components** that manage their own state, then **compose them** to make complex UIs.
+
+[reactjs.org](reactjs.org)
+
+Notes:
+
+straight from docs
+
+This is _different_ from when we were doing MVC/MVVM
+
+And the other major players right now are doing the same thing
 
 ---
 
 Trail: 1. Components
 
-- react & modern frameworks: components
+<!-- .slide: data-background="/images/artsy-components-1.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
-  - most important thing about React: component mindset
-  - what's the biggest advantage(s)?
+Notes:
 
----
-
-Trail: 1. Components
-
-- Legos
-
----
-
-Trail: 1. Components, Legos
-
-- draw out component boundaries in a site
-  - https://your-first-react-app.stevenhicks.me/#p70
+Whereas we used to think of an app like this in terms of one page and/or one controller
 
 ---
 
 Trail: 1. Components
 
-- Composability
-  - passing props to children
+<!-- .slide: data-background="/images/artsy-components-2.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+Now we think in terms of this page being composed of many components
+
+https://your-first-react-app.stevenhicks.me/#p70
 
 ---
 
 Trail: 1. Components
 
-- Isolation first; reuse comes as a natural side-effect.
+<!-- .slide: data-background="/images/artsy-components-3.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
-  - Importance of identifying boundaries: https://your-first-react-app.stevenhicks.me/#p82
+Notes:
+
+And those components are composed of _other_ components
+
+...
+
+This is actually an activity I do when I'm developing a new feature:
+
+Draw out the component boundaries before I start coding it.
+
+...
+
+But if we do a good job of identifying our component boundaries,
 
 ---
 
 Trail: 1. Components
 
-- suitcase principle factors in? (code organization)
+Layout: inverse
+
+<!-- .slide: data-background="/images/lego-artsy-bin.jpg" data-background-size="100%" -->
+
+Notes:
+
+It's almost like we have a bunch of legos ready to assemble
 
 ---
 
 Trail: 1. Components
 
-- components in react are functions
+Layout: inverse
 
-  - https://your-first-react-app.stevenhicks.me/#p85
+<!-- .slide: data-background="/images/lego-artsy-artwork.jpg" data-background-size="100%" -->
+
+Notes:
+
+And we can build bigger blocks with those legos,
+
+---
+
+Trail: 1. Components
+
+Layout: inverse
+
+<!-- .slide: data-background="/images/lego-artsy-artworks.jpg" data-background-size="100%" -->
+
+Notes:
+
+And then we can take a bunch of those slightly larger blocks
+
+---
+
+Trail: 1. Components
+
+Layout: inverse
+
+<!-- .slide: data-background="/images/lego-artsy-level-2.jpg" data-background-size="100%" -->
+
+Notes:
+
+And we can build an entire app with them
+
+---
+
+Trail: 1. Components
+
+<!-- .slide: data-background="/images/building-blocks.jpg" -->
+
+Notes:
+
+https://your-first-react-app.stevenhicks.me/#p82
+
+In order to do this well, we really need to focus on isolation of our components.
+
+(left image: not properly isolated, one component that does several things)
+
+(right image: properly isolated; components are building blocks.)
+
+---
+
+Trail: 1. Components
+
+## **Isolation of components** leads to reusability
+
+Notes:
+
+_Not_ the other way around. So focus on proper isolation.
+
+---
+
+Trail: 1. Components
+
+## The most important contribution from React is **thinking in terms of components**
+
+Notes:
+
+Components aren't unique to react,
+
+but React popularized this approach
+
+and it is IMO the single biggest contribution from React.
+
+---
+
+Trail: 1. Components
+
+> Conceptually, components are like **JavaScript functions**. They accept arbitrary **inputs**... and return React elements describing **what should appear on the screen**.
+
+[reactjs.org](reactjs.org)
 
 ---
 
 Trail: 1. Components, Are Functions
 
-- they should be pure
-  - what's a pure function?
+<!-- .slide: data-background="/images/component-f-props.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
----
-
-Trail: 1. Components, Are Functions
+Notes:
 
 - they take inputs (props)
-
----
-
-Trail: 1. Components, Are Functions
 
 - they render to the screen
 
@@ -143,63 +356,350 @@ Trail: 1. Components, Are Functions
 
 Trail: 1. Components, Are Functions
 
-- createElement
+> [a component function...] **should be pure**, meaning that it does not modify component state, it returns the same result each time it’s invoked, and it does not directly interact with the browser.
 
-  - https://your-first-react-app.stevenhicks.me/#p98
-
----
-
-Trail: 1. Components, Are Functions, createElement
-
-- example with 1 arg
-
----
-
-Trail: 1. Components, Are Functions, createElement
-
-- example with 2 args
-
----
-
-Trail: 1. Components, Are Functions, createElement
-
-- example with 3 args
-
----
-
-Trail: 1. Components, Are Functions, createElement
-
-- complex example
+[reactjs.org](reactjs.org)
 
 Notes:
 
-- transition:
-  - but no one builds a react app with createElement, because there's a better way...
-  - show me JSX!
+- they should be pure
+
+- what's a pure function?
+
 ---
-Layout: module
-# 2. JSX
+
+Trail: 1. Components, Are Functions, And Are Pure
+
+## A pure function:
+
+- ### is deterministic
+
+- ### does not have side-effects
+
+---
+
+Trail: 1. Components, Are Functions, And Are Pure
+
+## Pure 👍🏽
+
+```
+function add(a, b) {
+  return a + b;
+}
+```
+
+Notes:
+
+examples
+
+---
+
+Trail: 1. Components, Are Functions, And Are Pure
+
+## Impure 👎
+
+```
+function now() {
+  return new Date();
+}
+```
+
+Notes:
+
+doesn't return the same result each time it's called
+
+---
+
+Trail: 1. Components, Are Functions, And Are Pure
+
+## Impure 👎🏽
+
+```
+function decrement() {
+  this.x = this.x - 1;
+}
+```
+
+Notes:
+
+It modifies state
+
+---
+
+Trail: 1. Components, Are Functions
+
+```
+import React from 'react';
+
+function Artist(props) {
+  console.log(props.name, props.url);
+}
+```
+
+Notes:
+
+Here's what a function component looks like.
+
+This is a component that isn't actually _rendering_, it's just logging
+
+But you can see it's got two inputs being passed in via props - a name and a url.
+
+...
+
+if this is what inputs look like; how does it render to the browser?
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```
+function Artist(props) {
+  return React.createElement('div');
+}
+```
+
+```
+<div />
+```
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+using a helper from React named createElement
+
+Give it the element type
+
+...
+
+rendered to browser as a div
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```
+function Artist(props) {
+  return React.createElement(
+    'div',
+    { id: 'artist-wrapper' },
+    'Hi!'
+  );
+}
+```
+
+```
+<div id="artist-wrapper">Hi!</div>
+```
+
+Notes:
+
+2nd arg - attributes to apply to element
+
+3rd arg - child elements!
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```
+function Artist(props) {
+  return React.createElement(
+    'div',
+    { id: 'artist-wrapper' },
+    props.name
+  );
+}
+```
+
+```
+<div id="artist-wrapper">Andy Warhol</div>
+```
+
+Notes:
+
+We can use a prop as a child text element!
+
+When the prop changes, React will re-render
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```javascript
+function Artist(props) {
+  return React.createElement(
+    'div',
+    null,
+    React.createElement('h1', null, 'Artworks by ' + props.name)
+  );
+}
+```
+
+```
+<div>
+  <h1>Artworks by Andy Warhol</h1>
+</div>
+```
+
+Notes:
+
+We've looked at some simple examples, but usually our components are more complex
+
+We might want to render markup like this:
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```
+<div id="artist">
+  <div id="bio">
+    <h1>Andy Warhol</h1>
+    <h2>American, 1928 - 1987</h2>
+  </div>
+  <div id="photo">
+    <a href="/artists/andy-warhol">
+      <img src="/artists/andy-warhol/image" alt="Andy Warhol" />
+    </a>
+  </div>
+</div>
+```
+
+Notes:
+
+And in that case, the createElement statements would look like this:
+
+---
+
+Trail: 1. Components, Are Functions, createElement
+
+```
+function Artist(props) {
+  return React.createElement(
+    'div',
+    { id: 'artist' },
+    React.createElement(
+      'div',
+      { id: 'bio' },
+      React.createElement('h1', null, props.name),
+      React.createElement('h2', null, props.origin + ', ' + props.lifespan)
+    ),
+    React.createElement(
+      'div',
+      { id: 'photo' },
+      React.createElement(
+        'a',
+        {
+          href: '/artists/' + props.id,
+        },
+        React.createElement('img', {
+          src: props.profileImageUrl,
+          alt: props.name,
+        })
+      )
+    )
+  )
+}
+```
+
+Notes:
+
+As you can see, that's just not sustainable.
+
+So while you'll build your UI with a series of React.createElement calls,
+
+there's another abstraction you'll want to use that will make your life easier.
+
+And that brings us to....
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-1-components.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-2-jsx.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ---
 
 Trail: 2. JSX
 
-- https://your-first-react-app.stevenhicks.me/#p111
+> JSX is an XML-like syntax extension to ECMAScript without any defined semantics.
+
+[facebook.github.io/jsx/](https://facebook.github.io/jsx/)
+
+Notes:
+
+It's XML in Javascript
 
 ---
 
 Trail: 2. JSX
 
-- example with 1 arg
+```
+function Artist() {
+  return React.createElement('div');
+}
+```
+
+```
+function Artist() {
+  return <div />;
+}
+```
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+Here's our first example from before - React.createElement to render a div.
+
+...
+
+Here's what it looks like as JSX
+
+(PAUSE)
+
+note - no quotes around angle brackets
 
 ---
 
 Trail: 2. JSX
 
-- nested example
+```
+function Artist(props) {
+  return React.createElement(
+    'div',
+    { id: 'artist-wrapper' },
+    props.name
+  );
+}
+```
 
----
+```
+function Artist(props) {
+  return (
+    <div id="artist-wrapper">
+      {props.name}
+    </div>
+  )
+}
+```
 
-Trail: 2. JSX
+<!-- .element: class="fragment" -->
+
+Notes:
+
+- example that renders a name
+
+(PAUSE)
 
 - you might think you'll hate it
   - combo of xml & javascript, yikes!
@@ -209,536 +709,1468 @@ Trail: 2. JSX
 
 Trail: 2. JSX
 
-- complex example
+```
+function Artist(props) {
+  return React.createElement(
+    'div',
+    { id: 'artist' },
+    React.createElement(
+      'div',
+      { id: 'bio' },
+      React.createElement('h1', null, props.name),
+      React.createElement('h2', null, props.origin + ', ' + props.lifespan)
+    ),
+    React.createElement(
+      'div',
+      { id: 'photo' },
+      React.createElement(
+        'a',
+        {
+          href: '/artists/' + props.id,
+        },
+        React.createElement('img', {
+          src: props.profileImageUrl,
+          alt: props.name,
+        })
+      )
+    )
+  )
+}
+```
+
+Notes:
+
+remember this more complicated component?
+
+With JSX, it looks like this:
 
 ---
 
 Trail: 2. JSX
 
-- separation of concerns
-  - https://your-first-react-app.stevenhicks.me/#p121
-  - no, separation of _technologies_
+```
+function Artist(props) {
+  return (
+    <div id="artist">
+      <div id="bio">
+        <h1>{props.name}</h1>
+        <h2>{props.origin}, {props.lifespan}</h2>
+      </div>
+      <div id="photo">
+        <a href={'/artists/' + props.id}>
+          <img src={props.profileImageUrl} alt={props.name} />
+        </a>
+      </div>
+    </div>
+  )
+}
+```
+
+Notes:
+
+(PAUSE)
+
+It looks like the markup we want it to emit!
 
 ---
 
 Trail: 2. JSX
 
-- JSX lets us write everything in JavaScript
+## Separation Of Concerns
 
-  - maybe you don't like JS?
-  - but it means we get to use modern JS features!
+Notes:
+
+Often when people see JSX, they start talking about "separation of concerns"
+
+---
+
+Trail: 2. JSX, Separation Of Concerns
+
+<!-- .slide: data-background="/images/slicing-horizontal.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+And our instinct as engineers, historically, is to separate our code into layers
+
+keep your HTML with your HTML, JS with JS, ...
+
+---
+
+Trail: 2. JSX, Separation Of Concerns
+
+> Instead of artificially **separating technologies** by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both.
+
+[reactjs.org](reactjs.org)
+
+Notes:
+
+React addresses this claim head-on
+
+Stating that this traditional separation is a separation of _technologies_, not concerns
+
+(read it)
+
+---
+
+Trail: 2. JSX, Separation Of Concerns
+
+<!-- .slide: data-background="/images/slicing-vertical.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+When you're thinking in components, you can scrap the technological layers
+
+The concern is each individual component
+
+(PAUSE)
 
 ---
 
 Trail: 2. JSX
 
-- components + jsx lead to _declarative_ code
+```
+function Artist(props) {
+  if (props.name === 'Andy Warhol') {
+    return <div>I like your soup cans!</div>;
+  }
+  return <div>You make nice art.</div>;
+}
+```
+
+Notes:
+
+Because JSX is a superset of JavaScript,
+
+we can write our components entirely in JS
+
+No templating languages necessary.
+
+Here's a component that's using an if to decide which div to render.
+
+We get to use latest ES features anywhere in our code.
+
+---
+
+Trail: 2. JSX
+
+## Components in JSX lead to **declarative** code
+
+Notes:
+
+Let's talk a bit about why that matters,
+
+and we'll start with what it means for code to be declarative.
 
 ---
 
 Trail: 2. JSX, Declarative
 
-- demo declarative vs imperative (https://your-first-react-app.stevenhicks.me/#p46)
-  - how do you get to my house?
+**Q:** How do you get to my house?
+
+Notes:
+
+if you ask me how to get to my house,
+
+I can answer two ways
+
+---
+
+Layout: directions-to-my-house
+Trail: 2. JSX, Declarative
+
+**Q:** How do you get to my house?
+
+<!-- .slide: data-background="/images/directions-imperative.jpg" data-background-size="70%" data-background-color="#ffffff" -->
+
+Notes:
+
+I can tell you to
+
+- walk out the door
+- get in your car
+- drive it onto i-670 headed east
+- turn onto 70 north
+- 29
+  ...
+
+And that's an _imperative_ answer. It tells you very specifically _how_ to get to my house.
+
+---
+
+Layout: directions-to-my-house
+Trail: 2. JSX, Declarative
+
+**Q:** How do you get to my house?
+
+<!-- .slide: data-background="/images/directions-declarative.jpg" data-background-size="70%" data-background-color="#ffffff" -->
+
+Notes:
+
+Or I can tell you my address
+
+And I can leave it up to you to figure out the "how"
+
+this is _declarative_
+
+it tells you WHAT my address is, and leaves the HOW to you.
 
 ---
 
 Trail: 2. JSX, Declarative
 
-- show example of code
+```
+var artistsComingToMyParty = [];
+for (var i = 0; i < artists.length; i++) {
+  var artist = artists[i];
+  if (artist.rsvp === true) {
+    artistsComingToMyParty.push(artist);
+  }
+}
+```
+
+```
+var artistsComingToMyParty = artists.filter(
+  artist => artist.rsvp === true);
+```
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+or in code, the difference is illustrated here
+
+top: Imperative
+
+bottom: declarative
 
 ---
 
 Trail: 2. JSX, Declarative
 
-- imperative code is abstracted so we can call it declaratively
+## Imperative code is **abstracted** so that we can call it **declaratively**
+
+Notes:
+
+It's important to note, the imperative code doesn't just evaporate
+
+Often we have to abstract it before other code can call it declaratively
 
 ---
 
 Trail: 2. JSX, Declarative
 
-- declarative code leads to simplicity & predictability
----
-Layout: module
-# 3. Styling
+> Declarative views make your code **more predictable** and **easier to debug**.
 
-Notes: (number 8 on the board)
+[reactjs.org](reactjs.org)
+
+Notes:
+
+The big advantage to this declarative style of code is...
+
+time: 21minutes!
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-2-jsx.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-3-styling.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ---
 
 Trail: 3. Styling
 
-- so many options!
+## Styles Go With Components
 
----
-
-Trail: 3. Styling
+Notes:
 
 - Most importantly, styles go with components
 
----
+- No massive stylesheet to style your entire app
 
-Trail: 3. Styling
-
-- CSS/SCSS
+- Remember that not much is built into React, so you have **So many options**!
 
 ---
 
 Trail: 3. Styling
 
-- CSS Modules
+## CSS/SCSS
+
+```
+.artist {
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+}
+```
+
+artist.css
+
+```
+import './artist.css';
+
+function Artist(props) {
+  return <div className="artist">{props.name}</div>
+}
+```
+
+artist.jsx
+
+Notes:
+
+But you don't have to get super complicated.
+
+You can just stick CSS stylesheets alongside each component, and import them
+
+(Or SCSS if you prefer that)
 
 ---
 
 Trail: 3. Styling
+
+## CSS Modules
+
+[https://github.com/css-modules/css-modules](https://github.com/css-modules/css-modules)
+
+```
+.artist {
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+}
+```
+
+artist.css
+
+```
+import styles from './artist.css';
+
+function Artist(props) {
+  return <div className={styles.artist}>{props.name}</div>
+}
+```
+
+artist.jsx
+
+Notes:
+
+- `import styles from`
+- `className={styles.artist}`
+
+---
+
+Trail: 3. Styling
+
+## CSS Modules
+
+[https://github.com/css-modules/css-modules](https://github.com/css-modules/css-modules)
+
+```
+.Artist__artist__31BtE {
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+}
+```
+
+CSS
+
+```
+<div class="Artist__artist__31BtE">Andy Warhol</div>
+```
+
+HTML
+
+Notes:
+
+when emitted to browser
+
+- class name is mangled
+- can't possibly conflict!
+
+---
+
+Trail: 3. Styling
+
+## Styled Components
+
+[styled-components.com/](https://www.styled-components.com/)
+
+```
+import styled from 'styled-components';
+
+const brandColor = 'blueviolet';
+
+const StyledArtist = styled.div`
+  color: ${brandColor};
+  border-bottom: 1px solid ${brandColor};
+`;
+
+function Artist(props) {
+  return <StyledArtist>{props.name}</StyledArtist>;
+}
+```
+
+Notes:
 
 - CSS-in-JS
-  - Styled components
+
+  - many other flavors!
 
 ---
 
 Trail: 3. Styling
 
-- Separation of Concerns again
+## Styled Components
+
+[styled-components.com/](https://www.styled-components.com/)
+
+```
+.31BtE {
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+}
+```
+
+CSS
+
+```
+<div class="31BtE">Andy Warhol</div>
+```
+
+HTML
 
 ---
 
-Trail: 3. Styling
+Trail: 3. Styling, Separation Of Concerns
 
-- But you also might not like it! [X]
----
-Layout: module
-# 4. State Management
+<!-- .slide: data-background="/images/slicing-vertical.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
 Notes:
-#9 on the board
+
+Tons of options
+
+But you might not like the options, as they tend to be controversial especially amongst fans of CSS
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-styling-strike.jpg" data-background-size="100%" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+so let's give our first strike
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-3-styling.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-4-state-mgmt.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ---
 
 Trail: 4. State Management
+
+<!-- .slide: data-background="/images/component-f-props.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
 
 - remember the drawing of a component as f(props)?
+- it was a lie!
 
 ---
 
 Trail: 4. State Management
 
-- it's a lie. f(props, state).
-
----
-
-Trail: 4. State Management
-
-- example
-  - counter?
-  - (probably just a drawing showing that a component manages its state)
-
----
-
-Trail: 4. State Management
-
-- when you update state of a component, React re-renders it
+<!-- .slide: data-background="/images/component-f-props-state.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
 Notes:
 
-Mention there is no two-way binding for state mgmt - it's a one-directional loop.
+Components are _actually_ functions of both their props and their state
+
+...
+
+props are passed into a component
+
+state is contained within a component
+
+and the component manages it.
+
+Examples:
+
+- the checked state of a checkbox.
+- the current value of a counter
+
+...
+
+- when you update props OR state of a component, React re-renders it
 
 ---
 
 Trail: 4. State Management
 
-- state can be passed into child components (as props)
+<!-- .slide: data-background="/images/state-turns-into-props.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
----
+Notes:
 
-Trail: 4. State Management
+Once you have a component managing its state,
 
-- options!
+it can pass it down to its children as props
 
----
+This is a really common thing to do in React-
 
-Trail: 4. State Management, Options
+elevate the state to the highest level that any other component would need it, and manage it there.
 
-- useState
-  - for managing component state
+...
 
----
-
-Trail: 4. State Management, Options, useState
-
-- example
+When it comes to ways to manage state, you've got options!
 
 ---
 
 Trail: 4. State Management, Options
 
-- useContext
-  - for managing state of a sub-tree
+## `useState`
 
----
+```javascript
+function Counter() {
+  const [count, setCount] = useState(0);
 
-Trail: 4. State Management, Options, useContext
+  return (
+    <div>
+      Count: {count}
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+}
+```
 
-- drawing
+Notes:
 
----
+- every time that button gets clicked, state gets updated, & component re-rendered
+- If you need to manage more than one property, you just add more `useState`
 
-Trail: 4. State Management, Options, useContext
+Great for
 
-- example (might not make the cut)
-  - provider (at the top)
-  - consumers
+- managing individual component state
+- closely related components
+
+...
+
+and then a whole bunch of other great options:
 
 ---
 
 Trail: 4. State Management, Options
 
-- redux, mobx
-  - for managing state at the top of the tree
+## `useReducer`
 
----
+## `useContext`
 
-Trail: 4. State Management, Options, Redux/Mobx
+<!-- .element: class="fragment" -->
 
-- drawing
+## `Redux`
 
----
+<!-- .element: class="fragment" -->
 
-Trail: 4. State Management, Options, Redux/Mobx
+## `MobX`
 
-- example (might not make the cut)
+<!-- .element: class="fragment" -->
 
----
+## `mobx-state-tree`
 
-Trail: 4. State Management, Options, Redux/Mobx
+<!-- .element: class="fragment" -->
+
+Notes:
+
+Many options for dealing with application-level state
+
+- useReducer: more complicated state that depends on the previous state
+- useContext: for managing state across a large sub-tree
+- redux - application state that provides middleware in your state mgmt
+- mobx - application-level state mgmt w/ observables
+- mobx-state-tree - more opinionated version of MobX
 
 - caution: don't use these unless you know you need them
+---
+Footer: false
 
+<!-- .slide: data-background="/images/show-me-4-state-mgmt.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
-Trail: 4. State Management
+Footer: false
 
-- elevate state? (not sure if...)
----
-Layout: module
-# 5. New Features
+<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 Notes:
+
 #5 on the board
----
 
-Trail: 5. New Features
+React hadn't really changed for a few years
 
-- Hooks
-
----
-
-Trail: 5. New Features, Hooks
-
-- useState
-
----
-
-Trail: 5. New Features, Hooks
-
-- useContext
-
----
-
-Trail: 5. New Features, Hooks
-
-- useEffect
-
----
-
-Trail: 5. New Features, Hooks
-
-- closures
-  - find a good way to explain how each render closes over its hooks
-    - and how each time it renders, it gets a new closure
-
----
-
-Trail: 5. New Features, Hooks, Closures
-
-- you might not like them! [XX]
+until this year.
 
 ---
 
 Trail: 5. New Features
 
-- Suspense (no more "isLoading"!)
+## Hooks
 
----
-
-Trail: 5. New Features
-
-- "Minor" version
-  - Backwards compatible - you can do things the old way, too
----
-Layout: module
-# 6. Developer Experience
-
-Notes: #3 on the board
----
-
-Trail: 6. Developer Experience
-
-- tooling
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- hot-reloading
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- webpack (if you don't have to worry about configuring it)
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- babel/modern JS
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- TypeScript/flow
-  - https://your-first-react-app.stevenhicks.me/#p182
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- prettier!
-
----
-
-Trail: 6. Developer Experience, Tooling
-
-- You might not like Decision Fatigue! [XXX]
-
----
-
-Trail: 6. Developer Experience
-
-- react dev tools
-
----
-
-Trail: 6. Developer Experience
-
-- testing
----
-Layout: module
-# 7. Testing
+> Hooks are functions you can use in a Component to perform impure actions from a pure function.
 
 Notes:
 
-#4 on the board
+Remember we said our components are pure functions,
 
-https://your-first-react-app.stevenhicks.me/#p290
+and pure functions shouldn't have side-effects, or change state
 
----
+Hooks allow us to do that safely,
 
-Trail: 7. Testing
-
-- Jest
-  - (https://steven-j-hicks-speaking.netlify.com/test-driven-javascript/#p18)
+and in a way that allows React to re-render components when it needs to
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. New Features, Hooks
 
-- easy setup, no configuration
+## `useState`
 
----
+## `useReducer`
 
-Trail: 7. Testing, Jest
+<!-- .element: class="fragment" -->
 
-- interactive watch mode
+## `useContext`
 
----
-
-Trail: 7. Testing, Jest
-
-- great error messages
-
----
-
-Trail: 7. Testing, Jest
-
-- syntax
-
----
-
-Trail: 7. Testing, Jest
-
-- matchers
-
----
-
-Trail: 7. Testing
-
-- react-testing-library
-
----
-
-Trail: 7. Testing, react-testing-library
-
-- render
-
----
-
-Trail: 7. Testing, react-testing-library
-
-- find
-
----
-
-Trail: 7. Testing, react-testing-library
-
-- assert
-
----
-
-Trail: 7. Testing, react-testing-library
-
-- interact
-
----
-
-Trail: 7. Testing
-
-- enzyme
-
----
-
-Trail: 7. Testing, enzyme
-
-- a ton more ways to test a react app
----
-Layout: module
-# 8. Performance
+<!-- .element: class="fragment" -->
 
 Notes:
+
+- useState: For managing component state
+
+- useReducer: For managing more complicated state
+
+- useContext: For managing state across large subtrees
+
+...
+
+You might notice a pattern - all start with "use"
+
+---
+
+Trail: 5. New Features, Hooks
+
+## `useEffect`
+
+```jsx
+function ArtistDetails(props) {
+  const [artist, setArtist] = useState(null)
+
+  useEffect(() => {
+    const apiArtist = loadArtistFromApi(props.artistId)
+    setArtist(apiArtist)
+  }, [])
+
+  return ( ... )
+}
+```
+
+<!-- .element: class="fragment" -->
+
+---
+
+Trail: 5. New Features, Hooks
+
+## `useEffect`
+
+```jsx
+function Chat(props) {
+  useEffect(() => {
+
+    socket.emit('join', { id: props.friendId });
+
+    return () => {
+      socket.emit('leave', { id: props.friendId });
+    }
+
+  }, [ props.friendId ])
+
+  return ( ... )
+}
+```
+
+Notes:
+
+For performing side-effects from a component
+
+- What to do to fire the effect
+- what to do to clean up the effect
+- when the effect should re-run
+
+...
+
+Notice: the "leaving" of a socket is going to happen in the future sometime
+
+but we're still able to reference the friendId prop from when it rendered
+
+---
+
+Trail: 5. New Features, Hooks
+
+## Closures
+
+> A closure is the combination of a function and the lexical environment within which that function was declared.
+
+[developer.mozilla.org](developer.mozilla.org)
+
+Notes:
+
+That's because JavaScript forms closures over variables when you declare a function
+
+This is really helpful for the `useEffect` hook especially, and its multiple callback functions:
+
+---
+
+Trail: 5. New Features, Hooks
+
+## `useEffect`
+
+```jsx
+function Chat(props) {
+  useEffect(() => {
+
+    socket.emit('join', { id: props.friendId });
+
+    return () => {
+      socket.emit('leave', { id: props.friendId });
+    }
+
+  }, [ props.friendId ])
+
+  return ( ... )
+}
+```
+
+Notes:
+
+you know when your cleanup function executes, it's going to disconnect from the right friend's socket
+
+...
+
+But that's the happy path to closures in JavaScript.
+
+They can be really difficult to understand and manage, even in React hooks,
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-closures-strike.jpg" data-background-size="100%" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+And so we'll give a strike for closures.
+
+---
+
+Trail: 5. New Features
+
+## Suspense
+
+> Suspense lets components “wait” for something before rendering.
+
+[reactjs.org](reactjs.org)
+
+Notes:
+
+This is a really neat way to solve the problem that it takes time for browsers to load things.
+
+Until Suspense, we've had to manage "isLoading" flags all over our app
+
+---
+
+Trail: 5. New Features, Suspense
+
+```jsx
+const ArtistGraphs = React.lazy(() => import('./ArtistGraphs'));
+
+function Artist() {
+  return (
+    <React.Suspense fallback={<Loading />}>
+      <ArtistGraphs />
+    </React.Suspense>
+  );
+}
+```
+
+Notes:
+
+now, we can use React Suspense to emit fallback content,
+
+like a loading indicator,
+
+until something finishes loading.
+
+...
+
+That currently includes the ability to load the code for a component separate from the main application, lazily, when the user actually needs it,
+
+Soon, it will include the ability to emit fallback content
+
+until **data fetching** is complete for a component
+
+---
+
+Trail: 5. New Features
+
+## Backwards compatible
+
+Notes:
+
+- released as "Minor" version
+
+- Backwards compatible - you can do things the old way, too
+
+- This shows the care & consideration the React team takes to let you build your app the way YOU want to
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+#3 on the board
+
+The developer experience in React is top-notch
+
+starting with some non-react specifics, that you'd want in any framework
+
+---
+
+Trail: 6. Developer Experience
+
+## Hot-reloading
+
+Notes:
+
+When you're dev'ing locally, you make changes and see changes _instantly_ in your browser
+
+---
+
+Trail: 6. Developer Experience
+
+## webpack
+
+Notes:
+
+- integrates really easily with webpack
+
+- reduces size of JavaScript bundle via tree-shaking, which removes unused code
+
+- _if_ you don't have to worry about configuring it. That can be confusing.
+
+---
+
+Trail: 6. Developer Experience
+
+## babel
+
+```jsx
+function Artists({ artists }) {
+  return artists.map(artist => <ArtistDetail {...artist} />);
+}
+```
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+- integrates easily with babel
+
+- converts modern javascript syntax into javascript that is understood by all the browsers your app needs to support.
+
+- this means we can use the latest javascript specs in our app!
+
+...
+
+destructuring; fat arrow function w/ implicit return; object spread
+
+---
+
+Trail: 6. Developer Experience
+
+## TypeScript
+
+Notes:
+
+integrates easily with typescript
+
+- allows you to treat javascript as a strongly-typed language
+
+---
+
+Trail: 6. Developer Experience
+
+## TypeScript
+
+```
+interface ArtistProps {
+  name: string,
+  origin: string,
+  url: string
+}
+
+function Artist(props: ArtistProps) {
+  return (
+    <div id="artist">
+      <h1>
+        <a href={props.url}>{props.name}</a>
+      </h1>
+      <h2>{props.origin}</h2>
+    </div>
+  )
+}
+```
+
+Notes:
+
+- Describe types
+
+  - interface
+  - strings
+  - props: ArtistProps
+
+---
+
+Trail: 6. Developer Experience
+
+## TypeScript
+
+<img data-src="/images/type-check-error.png" width="90%"/>
+
+Notes:
+
+- when you use TS, you get compile-time errors about missing props
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-decision-fatigue-strike.jpg" data-background-size="100%" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+You might be catching on that there are a lot of decisions to be made
+
+Something like Angular or Ember is going to tell you how to do things, and not leave you a lot of freedom
+
+React will leave you a _lot_ of freedom in your implementation
+
+But that can be a thing that is really overwhelming.
+
+---
+
+Trail: 6. Developer Experience
+
+## Prettier
+
+<img data-src="/images/prettier.gif" width="70%"/>
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+one tool that can help you eliminate _some_ decisions is called Prettier
+
+prettier is an opinionated code-formatter
+
+...
+
+so you can write your code however you want
+
+and prettier will autoformat for you, and everyone on your team
+
+so you never have to worry about arguing over style
+
+---
+
+Trail: 6. Developer Experience
+
+## React Dev Tools
+
+Notes:
+
+browser extensions to help you identify what's happening in your react app.
+
+---
+
+Trail: 6. Developer Experience, React Dev Tools
+
+<img src="/images/react-dev-tools.jpg" alt="React dev tools" width="80%"/>
+
+Notes:
+
+It makes it really easy to see if your component is getting the props you're expecting
+
+which is really useful for debugging
+
+...
+
+One more piece of the developer experience is so great that it warrants its own place on our list -
+
+...
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-7-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
 #7 on the board
----
 
-Trail: 8. Performance
+I am a _huge_ fan of writing automated tests in general
 
-- virtual dom/reconciliation
-
----
-
-Trail: 8. Performance
-
-- tell a component when to update
+and the tooling for writing tests in React is the best I've experienced.
 
 ---
 
-Trail: 8. Performance
+Trail: 7. Testing
 
-- virtualization/windowing
-  - react-window
+## Jest
 
----
+> Jest is a **delightful** JavaScript Testing Framework with a focus on **simplicity**.
 
-Trail: 8. Performance, Windowing
-
-- example: https://react-window.now.sh/#/examples/list/fixed-size
-
----
-
-Trail: 8. Performance
-
-- profiler
----
-Layout: module
-# 9. Community
+[jestjs.io](https://jestjs.io)
 
 Notes:
-#10 on the board
+
+jest is not required to test React,
+
+and React isn't required to use Jest
+
+but Jest was born out of the React community
+
+---
+
+Trail: 7. Testing, Jest
+
+## Easy setup
+
+Notes:
+
+- easy setup
+
+- no configuration needed
+
+- finds your tests if they're there
+
+---
+
+Trail: 7. Testing, Jest
+
+## Interactive watch mode
+
+Notes:
+
+- by default runs only the tests affected by your uncommitted local changes
+
+- great for TDD
+
+- running only a few tests that you're actively interested in
+
+---
+
+Trail: 7. Testing, Jest
+
+## Great error messages
+
+<img data-src="/images/jest-error.jpg" width="70%"/>
+
+Notes:
+
+- helps you quickly identify what's wrong with your test
+
+---
+
+Trail: 7. Testing, Jest
+
+```javascript
+describe('findSimilarArtists', () => {
+  it('finds similar artists for Andy Warhol', () => {
+    const result = findSimilarArtists('Andy Warhol');
+
+    expect(result[0]).toEqual('Robert Indiana');
+  });
+});
+```
+
+Notes:
+
+syntax
+
+- describe
+- it
+- act
+- assert
+  - assertions are called "matchers"
+
+---
+
+Trail: 7. Testing, Jest
+
+```javascript
+expect(a).toEqual(b);
+
+expect(a).not.toEqual(b);
+
+expect(a).toBeGreaterThan(b);
+
+expect(a).toBeNull();
+
+expect(a).toBeUndefined();
+```
+
+Notes:
+
+Over 30 different matchers out of the box
+
+You can write custom ones
+
+---
+
+Trail: 7. Testing
+
+## react-testing-library
+
+Notes:
+
+And then for specifically testing React,
+
+there's a great library called r-t-l
+
+You can use it with Jest
+
+---
+
+Trail: 7. Testing, react-testing-library
+
+```javascript
+describe('ArtistDetail', () => {
+  it('renders something', () => {
+
+    const context = render(
+      <ArtistDetail artist={...} />
+    );
+
+    const button = context.queryByText('Details');
+    fireEvent.click(button);
+
+    expect(context.getByTestId('artist-details'))
+      .toHaveTextContent('Andy Warhol')
+
+  });
+});
+```
+
+Notes:
+
+Great API for
+
+- rendering
+- interacting with elements
+- asserting presence of elements
+
+...
+
+There are other libraries for testing React, too - Enzyme is a popular one
+
+But this is the boss hog of testing in react.
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-7-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-8-performance.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+Performance is built into react
+
+---
+
+Trail: 8. Performance
+
+## Reconciliation
+
+Notes:
+
+Some neat techniques to make sure your app renders quickly
+
+including the most well-known, Reconciliation
+
+- aka virtual-dom diffing
+
+- renders component to a "virtual" dom
+
+- compares that virtual dom to actual dom
+
+- only updates that which has changed
+
+- perf because slowest part of any UI is the actual commits to the DOM.
+
+---
+
+Trail: 8. Performance
+
+## Tips from the pros
+
+[reactjs.org/docs/optimizing-performance.html](https://reactjs.org/docs/optimizing-performance.html)
+
+Notes:
+
+Tips from the React docs
+
+Unusual, these types of tips usually come in unofficial blog posts
+
+more than 6 suggestions, from...
+
+- Use prod build to...
+- not mutating data unnecessarily
+- windowing/virtual scroll - render only the visible parts of a large list
+
+---
+
+Trail: 8. Performance
+Footer: false
+
+## Profiling
+
+<img src="/images/react-profiler.jpg" alt="React profiler" width="80%"/>
+
+Notes:
+
+Includes tips for profiling via your browser,
+
+or via a profiler built into the React dev tools.
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-8-performance.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-9-community.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ---
 
 Trail: 9. Community
 
-- Core team
+## Core team
+
+<img src="/images/react-is-not-bad.jpg" alt="React is not bad" width="80%"/>
+
+Notes:
+
+Core team is really engaged with the community using it
+
+---
+
+Trail: 9. Community, Core Team, Transparency
+
+<img src="/images/roadmap.jpg" alt="React roadmap" width="70%"/>
 
 ---
 
 Trail: 9. Community, Core Team
 
-- transparency about upcoming releases
+## Compassionate
 
----
+Notes:
 
-Trail: 9. Community, Core Team
+They spend a lot of time thinking about you & other react devs
 
-- stability
-  - backwards compatible
+- focus on stability
   - prior to hooks/suspense, there were minimal changes for 5 years!
+  - backwards compatible
+    - when possible they provide codemods to upgrade
 
 ---
 
 Trail: 9. Community
 
-- Docs
+## Docs
 
----
-
-Trail: 9. Community
-
-- larger dev community
-
----
-
-Trail: 9. Community, Others
-
-- ryan florence, kent dodds, cory house
-
----
-
-Trail: 9. Community, Others
-
-- list some courses
----
-Layout: module
-# 10. create-react-app
+[reactjs.org/docs](reactjs.org/docs)
 
 Notes:
-#6 on the board
+
+well-written and thorough w/o being overwhelming
+
+---
+
+Trail: 9. Community, Docs
+
+## Thinking In React
+
+[reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
+
+Notes:
+
+Especially this page. Read it!
+
+---
+
+Trail: 9. Community
+
+## [reactjs.org/community/courses](https://reactjs.org/community/courses.html)
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-9-community.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-10-create-react-app.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 ---
 
 Trail: 10. create-react-app
 
-- Getting started is so easy
+> Set up a modern web app by running one command
+
+[facebook.github.io/create-react-app/](https://facebook.github.io/create-react-app/)
 
 ---
 
 Trail: 10. create-react-app
 
-- Drawing of cra boxing together
+<!-- .slide: data-background="/images/create-react-app.jpg" data-background-size="75%" data-background-color="#ffffff" -->
 
 ---
 
 Trail: 10. create-react-app
 
-- Eject
+```bash
+> create-react-app my-app
+```
 
 ---
 
 Trail: 10. create-react-app
 
-- This is your next step!
+```bash
+> npm install -g create-react-app
+```
+
+Notes:
+
+install it now from npm!
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-10-create-react-app.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+Notes:
+
+Here they are - the 10 things you'll love about react.
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/lego-artsy-authors.jpg" data-background-size="contain" class="title" -->
+
+Notes:
+
+Before I close, I want to give a thank you
+
+to the creators of the lego artsy site you saw earlier
+
+My daughters Lila and Olivia
+
+Who think they are going to be famous because they're in this talk and I don't have the heart to tell them otherwise.
+
 ---
 
 Footer: false
 
 <!-- .slide: data-background="/images/drawings/some-title.jpg" class="title" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 # Thank you!
 
@@ -763,11 +2195,3 @@ Notes:
 - Questions afterward
 
 - Enjoy the rest of \_\_\_
-
----
-
-Layout: resources
-
-Trail: Resources
-
-- [resource](/link)

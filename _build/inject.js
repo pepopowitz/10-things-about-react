@@ -1,4 +1,9 @@
-const { injectTrail, injectFooter, injectLayout } = require('./injectors');
+const {
+  injectTrail,
+  injectFooter,
+  injectLayout,
+  injectLineNumbers,
+} = require('./injectors');
 
 module.exports = (markdown, options) => {
   return new Promise((resolve, reject) => {
@@ -11,5 +16,5 @@ module.exports = (markdown, options) => {
 };
 
 function inject(slide) {
-  return injectTrail(injectFooter(injectLayout(slide)));
+  return injectTrail(injectFooter(injectLayout(injectLineNumbers(slide))));
 }

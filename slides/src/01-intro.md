@@ -10,7 +10,7 @@ Footer: false
   </defs>
 </svg>
 
-# 10 Things You'll Love About React
+# **10 Things** You'll Love About React
 
 ## Steven Hicks
 
@@ -34,9 +34,37 @@ Notes: STICKERS!
 
 Footer: false
 
+<!-- .slide: data-background="/images/kcdc-sponsors.jpg" data-background-size="contain" data-background-color="black" -->
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/star-student.jpg" -->
+
+Notes:
+
+My kids when they were in kindergarten got to make a huge poster when they were the "star student"
+
+Where they put everything you need to know about them
+
+So I did the same
+
+- Milwaukee
+- JS
+- Super cool letter S
+- Family
+- Outdoors/trail running
+
+---
+
+Footer: false
+
 <!-- .slide: data-background="/images/artsy.svg" data-background-size="750px" data-background-color="black" -->
 
 Notes:
+
+Engineer at Artsy
 
 NYC, MKE
 
@@ -46,4 +74,84 @@ and we're doing that with a platform for collecting and discovering art.
 
 ---
 
-some sort of intro. Why are we talking about this?
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-1.jpg" -->
+
+Notes:
+
+20+ years experience as a JS developer
+
+Many ways I've built JS apps
+
+My user journey
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-2.jpg" -->
+
+Notes:
+
+plain js
+
+- hard to write code
+- hard to write an app
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-3.jpg" -->
+
+Notes:
+
+jquery
+
+- amazing
+- easy to write code
+- hard to write an app
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-4.jpg" -->
+
+Notes:
+
+mv\*
+
+- angular, backbone, knockout
+
+- easy to write code, hard to write an app (ko)
+- easy to write an app, hard to write code (angular)
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/user-journey-5.jpg" -->
+
+Notes:
+
+And now I'm building apps with React, and have been for the last few years, and I'm really happy.
+
+- easy to write code
+- easy to write app
+
+...
+
+Because I have 10 things to present, I need a clever way to present a list
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/10-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
