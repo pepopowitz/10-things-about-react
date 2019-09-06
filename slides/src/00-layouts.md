@@ -1,5 +1,5 @@
 ---
-title: 10 Things You'll Love About React - Steven J Hicks
+title: 5 Things You'll Love About React - Steven J Hicks
 theme: css/theme.css
 highlightTheme: 'mono-blue'
 revealOptions:

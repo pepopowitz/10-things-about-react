@@ -10,7 +10,7 @@ Footer: false
   </defs>
 </svg>
 
-# **10 Things** You'll Love About React
+# **5 Things** You'll Love About React
 
 ## Steven Hicks
 
@@ -24,7 +24,7 @@ Footer: false
 
 <svg class="icon">
   <use xlink:href="#si-zocial-cloudapp" />
-</svg>stevenhicks.me/10-things-about-react
+</svg>stevenhicks.me/5-things-about-react
 
 Notes: STICKERS!
 
@@ -143,7 +143,7 @@ And now I'm building apps with React, and have been for the last few years, and 
 
 ...
 
-Because I have 10 things to present, I need a clever way to present a list
+Because I have 5 things to present, I need a clever way to present a list
 
 ---
 

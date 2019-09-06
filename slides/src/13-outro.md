@@ -5,7 +5,7 @@ Footer: false
 
 Notes:
 
-Here they are - the 10 things you'll love about react.
+Here they are - the 5 things you'll love about react.
 
 ---
 
@@ -48,7 +48,7 @@ Footer: false
 
 <svg class="icon">
   <use xlink:href="#si-zocial-cloudapp" />
-</svg>stevenhicks.me/10-things-about-react
+</svg>stevenhicks.me/5-things-about-react
 
 Notes:
 
