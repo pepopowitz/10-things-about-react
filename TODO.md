@@ -1,17 +1,6 @@
-- Make it _5_ things you'll love about react. It's too damn long. 57 minutes at kcdc, and lost people right around 45.
+Break up testing examples to walk through code more slowly
 
-  - Components
-  - JSX
-  - Developer experience or styling????
-  - Testing
-  - New features
-
-    - emphasize that there's no two-way data-binding, it's a one-directional loop
-    - emphasize hooks/new features
-
-  - How to get started
-    - create-react-app
-    - community
+---
 
 Timing from kcdc:
 

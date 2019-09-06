@@ -15,7 +15,7 @@ Footer: false
 
 Notes:
 
-#7 on the board
+#5 on the board
 
 I am a _huge_ fan of writing automated tests in general
 
@@ -23,7 +23,7 @@ and the tooling for writing tests in React is the best I've experienced.
 
 ---
 
-Trail: 7. Testing
+Trail: 5. Testing
 
 ## Jest
 
@@ -41,7 +41,7 @@ but Jest was born out of the React community
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Easy setup
 
@@ -55,7 +55,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Interactive watch mode
 
@@ -69,7 +69,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Great error messages
 
@@ -81,7 +81,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ```javascript
 describe('findSimilarArtists', () => {
@@ -105,7 +105,7 @@ syntax
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ```javascript
 expect(a).toEqual(b);
@@ -127,7 +127,7 @@ You can write custom ones
 
 ---
 
-Trail: 7. Testing
+Trail: 5. Testing
 
 ## react-testing-library
 
@@ -141,7 +141,7 @@ You can use it with Jest
 
 ---
 
-Trail: 7. Testing, react-testing-library
+Trail: 5. Testing, react-testing-library
 
 ```javascript
 describe('ArtistDetail', () => {

@@ -34,12 +34,6 @@ Notes: STICKERS!
 
 Footer: false
 
-<!-- .slide: data-background="/images/kcdc-sponsors.jpg" data-background-size="contain" data-background-color="black" -->
-
----
-
-Footer: false
-
 <!-- .slide: data-background="/images/star-student.jpg" -->
 
 Notes:

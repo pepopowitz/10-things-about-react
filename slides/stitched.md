@@ -48,12 +48,6 @@ Notes: STICKERS!
 
 Footer: false
 
-<!-- .slide: data-background="/images/kcdc-sponsors.jpg" data-background-size="contain" data-background-color="black" -->
-
----
-
-Footer: false
-
 <!-- .slide: data-background="/images/star-student.jpg" -->
 
 Notes:
@@ -985,7 +979,7 @@ Footer: false
 
 Notes:
 
-#5 on the board
+#3 on the board
 
 React hadn't really changed for a few years
 
@@ -993,7 +987,7 @@ until this year.
 
 ---
 
-Trail: 5. New Features
+Trail: 3. New Features
 
 ## Hooks
 
@@ -1011,7 +1005,109 @@ and in a way that allows React to re-render components when it needs to
 
 ---
 
-Trail: 5. New Features, Hooks
+Trail: 3. New Features, Hooks
+
+## `useState`
+
+Notes:
+
+Allows us to manage state in our function components
+
+---
+
+Trail: 3. New Features, Hooks, State Management
+
+<!-- .slide: data-background="/images/component-f-props.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+- remember the drawing of a component as f(props)?
+- it was a lie!
+
+---
+
+Trail: 3. New Features, Hooks, State Management
+
+<!-- .slide: data-background="/images/component-f-props-state.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+Components are _actually_ functions of both their props and their state
+
+...
+
+props are passed into a component
+
+state is contained within a component
+
+and the component manages it.
+
+Examples:
+
+- the checked state of a checkbox.
+- the current value of a counter
+
+...
+
+- when you update props OR state of a component, React re-renders it
+
+---
+
+Trail: 3. New Features, Hooks, State Management
+
+<!-- .slide: data-background="/images/state-turns-into-props.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+Notes:
+
+Once you have a component managing its state,
+
+it can pass it down to its children as props
+
+This is a really common thing to do in React-
+
+elevate the state to the highest level that any other component would need it, and manage it there.
+
+...
+
+When it comes to ways to manage state, you've got options!
+
+---
+
+Trail: 3. New Features, Hooks
+
+## `useState`
+
+```javascript
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      Count: {count}
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+}
+```
+
+Notes:
+
+- every time that button gets clicked, state gets updated, & component re-rendered
+- If you need to manage more than one property, you just add more `useState`
+
+Great for
+
+- managing individual component state
+- closely related components
+
+...
+
+and then a whole bunch of other great options:
+
+---
+
+Trail: 3. New Features, Hooks
 
 ## `useState`
 
@@ -1025,6 +1121,8 @@ Trail: 5. New Features, Hooks
 
 Notes:
 
+Other means of managing state:
+
 - useState: For managing component state
 
 - useReducer: For managing more complicated state
@@ -1037,7 +1135,7 @@ You might notice a pattern - all start with "use"
 
 ---
 
-Trail: 5. New Features, Hooks
+Trail: 3. New Features, Hooks
 
 ## `useEffect`
 
@@ -1058,7 +1156,7 @@ function ArtistDetails(props) {
 
 ---
 
-Trail: 5. New Features, Hooks
+Trail: 3. New Features, Hooks
 
 ## `useEffect`
 
@@ -1094,7 +1192,7 @@ but we're still able to reference the friendId prop from when it rendered
 
 ---
 
-Trail: 5. New Features, Hooks
+Trail: 3. New Features, Hooks
 
 ## Closures
 
@@ -1110,7 +1208,7 @@ This is really helpful for the `useEffect` hook especially, and its multiple cal
 
 ---
 
-Trail: 5. New Features, Hooks
+Trail: 3. New Features, Hooks
 
 ## `useEffect`
 
@@ -1157,7 +1255,7 @@ And so we'll give a strike for closures.
 
 ---
 
-Trail: 5. New Features
+Trail: 3. New Features
 
 ## Suspense
 
@@ -1173,7 +1271,7 @@ Until Suspense, we've had to manage "isLoading" flags all over our app
 
 ---
 
-Trail: 5. New Features, Suspense
+Trail: 3. New Features, Suspense
 
 ```jsx
 const ArtistGraphs = React.lazy(() => import('./ArtistGraphs'));
@@ -1205,7 +1303,7 @@ until **data fetching** is complete for a component
 
 ---
 
-Trail: 5. New Features
+Trail: 3. New Features
 
 ## Backwards compatible
 
@@ -1216,6 +1314,242 @@ Notes:
 - Backwards compatible - you can do things the old way, too
 
 - This shows the care & consideration the React team takes to let you build your app the way YOU want to
+---
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+#3 on the board
+
+The developer experience in React is top-notch
+
+starting with some non-react specifics, that you'd want in any framework
+
+---
+
+Trail: 4. Developer Experience
+
+## Hot-reloading
+
+Notes:
+
+When you're dev'ing locally, you make changes and see changes _instantly_ in your browser
+
+---
+
+Trail: 4. Developer Experience
+
+## webpack
+
+Notes:
+
+- integrates really easily with webpack
+
+- reduces size of JavaScript bundle via tree-shaking, which removes unused code
+
+- _if_ you don't have to worry about configuring it. That can be confusing.
+
+---
+
+Trail: 4. Developer Experience
+
+## babel
+
+```jsx
+function Artists({ artists }) {
+  return artists.map(artist => <ArtistDetail {...artist} />);
+}
+```
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+- integrates easily with babel
+
+- converts modern javascript syntax into javascript that is understood by all the browsers your app needs to support.
+
+- this means we can use the latest javascript specs in our app!
+
+...
+
+destructuring; fat arrow function w/ implicit return; object spread
+
+---
+
+Trail: 4. Developer Experience
+
+## TypeScript
+
+Notes:
+
+integrates easily with typescript
+
+- allows you to treat javascript as a strongly-typed language
+
+---
+
+Trail: 4. Developer Experience
+
+## TypeScript
+
+```
+interface ArtistProps {
+  name: string,
+  origin: string,
+  url: string
+}
+
+function Artist(props: ArtistProps) {
+  return (
+    <div id="artist">
+      <h1>
+        <a href={props.url}>{props.name}</a>
+      </h1>
+      <h2>{props.origin}</h2>
+    </div>
+  )
+}
+```
+
+Notes:
+
+- Describe types
+
+  - interface
+  - strings
+  - props: ArtistProps
+
+---
+
+Trail: 4. Developer Experience
+
+## TypeScript
+
+<img data-src="/images/type-check-error.png" width="90%"/>
+
+Notes:
+
+- when you use TS, you get compile-time errors about missing props
+
+---
+
+Footer: false
+
+<!-- .slide: data-background="/images/show-me-decision-fatigue-strike.jpg" data-background-size="100%" -->
+
+<audio data-autoplay>
+  <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+Notes:
+
+You might be catching on that there are a lot of decisions to be made
+
+Something like Angular or Ember is going to tell you how to do things, and not leave you a lot of freedom
+
+React will leave you a _lot_ of freedom in your implementation
+
+But that can be a thing that is really overwhelming.
+
+---
+
+Trail: 4. Developer Experience
+
+## Prettier
+
+<img data-src="/images/prettier.gif" width="70%"/>
+
+<!-- .element: class="fragment" -->
+
+Notes:
+
+one tool that can help you eliminate _some_ decisions is called Prettier
+
+prettier is an opinionated code-formatter
+
+...
+
+so you can write your code however you want
+
+and prettier will autoformat for you, and everyone on your team
+
+so you never have to worry about arguing over style
+
+---
+
+Trail: 4. Developer Experience
+
+## React Dev Tools
+
+Notes:
+
+browser extensions to help you identify what's happening in your react app.
+
+---
+
+Trail: 4. Developer Experience, React Dev Tools
+
+<img src="/images/react-dev-tools.jpg" alt="React dev tools" width="80%"/>
+
+Notes:
+
+It makes it really easy to see if your component is getting the props you're expecting
+
+which is really useful for debugging
+
+---
+
+Trail: 4. Developer Experience
+
+## Performance
+
+Notes:
+
+Performance baked into react
+
+you're guided to the pit of success
+
+Some neat techniques to make sure your app renders quickly...
+
+---
+
+Trail: 4. Developer Experience, Performance
+
+## Reconciliation
+
+Notes:
+
+including the most well-known, Reconciliation
+
+- aka virtual-dom diffing
+
+- renders component to a "virtual" dom
+
+- compares that virtual dom to actual dom
+
+- only updates that which has changed
+
+- perf because slowest part of any UI is the actual commits to the DOM.
+
+...
+
+One more piece of the developer experience is so great that it warrants its own place on our list -
+
+...
 ---
 Footer: false
 
@@ -1233,7 +1567,7 @@ Footer: false
 
 Notes:
 
-#7 on the board
+#5 on the board
 
 I am a _huge_ fan of writing automated tests in general
 
@@ -1241,7 +1575,7 @@ and the tooling for writing tests in React is the best I've experienced.
 
 ---
 
-Trail: 7. Testing
+Trail: 5. Testing
 
 ## Jest
 
@@ -1259,7 +1593,7 @@ but Jest was born out of the React community
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Easy setup
 
@@ -1273,7 +1607,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Interactive watch mode
 
@@ -1287,7 +1621,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ## Great error messages
 
@@ -1299,7 +1633,7 @@ Notes:
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ```javascript
 describe('findSimilarArtists', () => {
@@ -1323,7 +1657,7 @@ syntax
 
 ---
 
-Trail: 7. Testing, Jest
+Trail: 5. Testing, Jest
 
 ```javascript
 expect(a).toEqual(b);
@@ -1345,7 +1679,7 @@ You can write custom ones
 
 ---
 
-Trail: 7. Testing
+Trail: 5. Testing
 
 ## react-testing-library
 
@@ -1359,7 +1693,7 @@ You can use it with Jest
 
 ---
 
-Trail: 7. Testing, react-testing-library
+Trail: 5. Testing, react-testing-library
 
 ```javascript
 describe('ArtistDetail', () => {
@@ -1403,12 +1737,35 @@ Here they are - the 5 things you'll love about react.
 
 ---
 
-TODO: How to get started?
+Trail: Getting started
 
-- create-react-app
-- thinking in react
+## `create-react-app`
+
+> Set up a modern web app by running one command
+
+[facebook.github.io/create-react-app/](https://facebook.github.io/create-react-app/)
 
 Notes:
+
+---
+
+Trail: Getting started, create-react-app
+
+<!-- .slide: data-background="/images/create-react-app.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+---
+
+Trail: Getting started, create-react-app
+
+```bash
+> create-react-app my-app
+```
+
+---
+
+Trail: Getting started
+
+## Thinking In React
 
 [reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
 

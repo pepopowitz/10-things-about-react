@@ -9,12 +9,35 @@ Here they are - the 5 things you'll love about react.
 
 ---
 
-TODO: How to get started?
+Trail: Getting started
 
-- create-react-app
-- thinking in react
+## `create-react-app`
+
+> Set up a modern web app by running one command
+
+[facebook.github.io/create-react-app/](https://facebook.github.io/create-react-app/)
 
 Notes:
+
+---
+
+Trail: Getting started, create-react-app
+
+<!-- .slide: data-background="/images/create-react-app.jpg" data-background-size="75%" data-background-color="#ffffff" -->
+
+---
+
+Trail: Getting started, create-react-app
+
+```bash
+> create-react-app my-app
+```
+
+---
+
+Trail: Getting started
+
+## Thinking In React
 
 [reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
 

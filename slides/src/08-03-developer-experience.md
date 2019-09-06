@@ -23,7 +23,7 @@ starting with some non-react specifics, that you'd want in any framework
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## Hot-reloading
 
@@ -33,7 +33,7 @@ When you're dev'ing locally, you make changes and see changes _instantly_ in you
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## webpack
 
@@ -47,7 +47,7 @@ Notes:
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## babel
 
@@ -73,7 +73,7 @@ destructuring; fat arrow function w/ implicit return; object spread
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## TypeScript
 
@@ -85,7 +85,7 @@ integrates easily with typescript
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## TypeScript
 
@@ -118,7 +118,7 @@ Notes:
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## TypeScript
 
@@ -151,7 +151,7 @@ But that can be a thing that is really overwhelming.
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## Prettier
 
@@ -175,7 +175,7 @@ so you never have to worry about arguing over style
 
 ---
 
-Trail: 6. Developer Experience
+Trail: 4. Developer Experience
 
 ## React Dev Tools
 
@@ -185,7 +185,7 @@ browser extensions to help you identify what's happening in your react app.
 
 ---
 
-Trail: 6. Developer Experience, React Dev Tools
+Trail: 4. Developer Experience, React Dev Tools
 
 <img src="/images/react-dev-tools.jpg" alt="React dev tools" width="80%"/>
 
@@ -194,6 +194,40 @@ Notes:
 It makes it really easy to see if your component is getting the props you're expecting
 
 which is really useful for debugging
+
+---
+
+Trail: 4. Developer Experience
+
+## Performance
+
+Notes:
+
+Performance baked into react
+
+you're guided to the pit of success
+
+Some neat techniques to make sure your app renders quickly...
+
+---
+
+Trail: 4. Developer Experience, Performance
+
+## Reconciliation
+
+Notes:
+
+including the most well-known, Reconciliation
+
+- aka virtual-dom diffing
+
+- renders component to a "virtual" dom
+
+- compares that virtual dom to actual dom
+
+- only updates that which has changed
+
+- perf because slowest part of any UI is the actual commits to the DOM.
 
 ...
 
