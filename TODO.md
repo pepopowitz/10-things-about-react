@@ -2,9 +2,9 @@
 
   - Components
   - JSX
-  - Developer experience
+  - Developer experience or styling????
   - Testing
-  - State management
+  - New features
 
     - emphasize that there's no two-way data-binding, it's a one-directional loop
     - emphasize hooks/new features

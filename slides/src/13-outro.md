@@ -9,6 +9,17 @@ Here they are - the 5 things you'll love about react.
 
 ---
 
+TODO: How to get started?
+
+- create-react-app
+- thinking in react
+
+Notes:
+
+[reactjs.org/docs/thinking-in-react.html](https://reactjs.org/docs/thinking-in-react.html)
+
+---
+
 Footer: false
 
 <!-- .slide: data-background="/images/lego-artsy-authors.jpg" data-background-size="contain" class="title" -->
