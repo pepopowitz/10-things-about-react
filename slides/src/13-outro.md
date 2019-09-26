@@ -1,7 +1,7 @@
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-10-create-react-app.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-5-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 Notes:
 

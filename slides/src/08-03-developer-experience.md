@@ -1,12 +1,12 @@
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-3-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-4-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
@@ -132,7 +132,7 @@ Notes:
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-decision-fatigue-strike.jpg" data-background-size="100%" -->
+<!-- .slide: data-background="/images/show-me-decisions-strike.jpg" data-background-size="100%" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">

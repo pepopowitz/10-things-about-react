@@ -157,7 +157,7 @@ Because I have 5 things to present, I need a clever way to present a list
 
 Footer: false
 
-<!-- .slide: data-background="/images/10-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/5-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-theme.mp3" type="audio/mpeg">
@@ -965,12 +965,12 @@ time: 21minutes!
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-4-state-mgmt.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-2-jsx.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-3-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
@@ -1317,12 +1317,12 @@ Notes:
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-3-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-4-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
@@ -1448,7 +1448,7 @@ Notes:
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-decision-fatigue-strike.jpg" data-background-size="100%" -->
+<!-- .slide: data-background="/images/show-me-decisions-strike.jpg" data-background-size="100%" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-buzzer.mp3" type="audio/mpeg">
@@ -1553,12 +1553,12 @@ One more piece of the developer experience is so great that it warrants its own 
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-4-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-7-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-5-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
@@ -1702,6 +1702,60 @@ describe('ArtistDetail', () => {
     const context = render(
       <ArtistDetail artist={...} />
     );
+​
+​
+​
+​
+​
+​
+​
+  });
+});
+```
+
+Notes:
+
+Great API for
+
+- rendering....
+
+---
+
+Trail: 5. Testing, react-testing-library
+
+```javascript
+describe('ArtistDetail', () => {
+  it('renders something', () => {
+
+    const context = render(
+      <ArtistDetail artist={...} />
+    );
+
+    const button = context.queryByText('Details');
+    fireEvent.click(button);
+​
+​
+​
+​
+  });
+});
+```
+
+Notes:
+
+- ...interacting with elements...
+
+---
+
+Trail: 5. Testing, react-testing-library
+
+```javascript
+describe('ArtistDetail', () => {
+  it('renders something', () => {
+
+    const context = render(
+      <ArtistDetail artist={...} />
+    );
 
     const button = context.queryByText('Details');
     fireEvent.click(button);
@@ -1715,10 +1769,6 @@ describe('ArtistDetail', () => {
 
 Notes:
 
-Great API for
-
-- rendering
-- interacting with elements
 - asserting presence of elements
 
 ...
@@ -1729,7 +1779,7 @@ But this is the boss hog of testing in react.
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-10-create-react-app.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-5-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 Notes:
 

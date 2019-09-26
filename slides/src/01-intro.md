@@ -143,7 +143,7 @@ Because I have 5 things to present, I need a clever way to present a list
 
 Footer: false
 
-<!-- .slide: data-background="/images/10-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/5-things.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-theme.mp3" type="audio/mpeg">

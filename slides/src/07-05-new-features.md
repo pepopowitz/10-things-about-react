@@ -1,12 +1,12 @@
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-4-state-mgmt.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-2-jsx.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-5-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-3-new-features.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">

@@ -1,12 +1,12 @@
 ---
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-6-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-4-dev-ex.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 ---
 
 Footer: false
 
-<!-- .slide: data-background="/images/show-me-7-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
+<!-- .slide: data-background="/images/show-me-5-testing.jpg" data-background-size="100%" data-background-color="#ffffff" -->
 
 <audio data-autoplay>
   <source data-src="/images/sounds-bing.mp3" type="audio/mpeg">
@@ -150,6 +150,60 @@ describe('ArtistDetail', () => {
     const context = render(
       <ArtistDetail artist={...} />
     );
+​
+​
+​
+​
+​
+​
+​
+  });
+});
+```
+
+Notes:
+
+Great API for
+
+- rendering....
+
+---
+
+Trail: 5. Testing, react-testing-library
+
+```javascript
+describe('ArtistDetail', () => {
+  it('renders something', () => {
+
+    const context = render(
+      <ArtistDetail artist={...} />
+    );
+
+    const button = context.queryByText('Details');
+    fireEvent.click(button);
+​
+​
+​
+​
+  });
+});
+```
+
+Notes:
+
+- ...interacting with elements...
+
+---
+
+Trail: 5. Testing, react-testing-library
+
+```javascript
+describe('ArtistDetail', () => {
+  it('renders something', () => {
+
+    const context = render(
+      <ArtistDetail artist={...} />
+    );
 
     const button = context.queryByText('Details');
     fireEvent.click(button);
@@ -163,10 +217,6 @@ describe('ArtistDetail', () => {
 
 Notes:
 
-Great API for
-
-- rendering
-- interacting with elements
 - asserting presence of elements
 
 ...
